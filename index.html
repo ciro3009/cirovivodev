@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 40px 20px;
-        }
-        h1 {
-            color: #0066cc;
-            margin-bottom: 40px;
-        }
-        img {
-            max-width: 100%;
-            width: 400px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personale di Ciro Vivo. con progetti web e repository GitHub.">
+  <title>Ciro Vivo | Portfolio studente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>ciao, lui è marco</h1>
-    <img src="ciao.jpg" alt="Marco">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Torna all'inizio">CV<span>.</span></a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="#progetti">Progetti</a>
+      <a class="nav-github" href="https://github.com/ciro3009" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Studente di informatica</p>
+        <h1 id="hero-title">Studio Informatica,<br><em>Questo è quello che ne esce.</em></h1>
+        <p class="hero-text">Sono Ciro, uno studente di informatica al 4° anno di studi e qui troverai i miei progetti.</p>
+        <a class="text-link" href="#progetti">Scopri i progetti <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-note" aria-label="Nota personale">
+        <span class="note-mark">✳</span>
+        <p>QPiccola raccolta di cose che ho costruito per imparare — e che continuo a migliorare nel tempo.</p>
+      </div>
+    </section>
+
+    <section class="projects-section" id="progetti" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="projects-title">Progetti</h2>
+        </div>
+        <p class="section-intro">Una selezione dei miei progetti.</p>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Ciro V.</span>
+    <a href="#top">Torna su ↑</a>
+  </footer>
 </body>
 </html>
